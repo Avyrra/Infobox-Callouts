@@ -1,7 +1,3 @@
-![Screenshot](Infobox%20Callouts%20Example%20Vault/Files/Screenshot.png)
-
-
-
 # Install Guide
 1. Download infobox-callouts.css
 2. Open your vault's snippets folder (vault/.obsidian/snippets) - Can also be found by clicking the folder icon in the appearance options menu
@@ -16,3 +12,5 @@
 4. Click on Style Settings. Install it. Then Enable it.
 5. A new menu will appear at the bottom of your options menu called Style Settings
 6. Enjoy!
+
+![Screenshot](Infobox%20Callouts%20Example%20Vault/Files/Screenshot.png)
