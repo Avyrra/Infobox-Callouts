@@ -1,3 +1,5 @@
+![]([Infobox Callouts Example Vault/Files/Screenshot.png](https://github.com/Avyrra/Infobox-Callouts/blob/main/Infobox%20Callouts%20Example%20Vault/Files/Screenshot.png?raw=true))
+
 # Install Guide
 1. Download infobox-callouts.css
 2. Open your vault's snippets folder (vault/.obsidian/snippets) - Can also be found by clicking the folder icon in the appearance options menu
