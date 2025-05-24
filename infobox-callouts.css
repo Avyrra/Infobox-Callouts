@@ -79,11 +79,25 @@ settings:
         format: rem
 
     -
+        id: ic-title-margin
+        title: Margin
+        type: variable-number
+        default: 0
+        format: rem
+
+    -
         id: ic-title-extended-typography
         title: Extended Typography
         type: heading
         level: 2
         collapsed: true
+
+    -
+        id: ic-typography-disclaimer
+        title: Disclaimer
+        description: Other themes, snippets, or plugins may interfere with these settings and cause them to work incorrectly.
+        type: info-text
+        markdown: false
 
     -
         id: ic-title-typography-toggle
@@ -241,6 +255,13 @@ settings:
         type: heading
         level: 2
         collapsed: true
+
+    -
+        id: ic-typography-disclaimer
+        title: Disclaimer
+        description: Other themes, snippets, or plugins may interfere with these settings and cause them to work incorrectly.
+        type: info-text
+        markdown: false
 
     -
         id: ic-section-typography-toggle
@@ -447,6 +468,16 @@ settings:
         default-light: '#6B948F'
         default-dark: '#6B948F'
 
+    -
+        id: ic-infobox-title-color
+        title: Title Color
+        type: variable-themed-color
+        format: hex
+        opacity: true
+        default-light: '#4B6864'
+        default-dark: '#FFFFFF'
+
+
 */
 
 :root {
@@ -456,6 +487,7 @@ settings:
   --ic-round-corners: 0px;
   --ic-title-alignment: center;
   --ic-title-size: 1.2rem;
+  --ic-title-margin: 0rem;
   --ic-title-word-spacing: 0rem;
   --ic-title-tracking: 1rem;
   --ic-title-font: "Noto Sans";
@@ -487,6 +519,7 @@ settings:
     --ic-section-background-color: #B5C9C7;
     --ic-section-border-color: #6B948F;
     --ic-horizontal-rule-color: #6B948F;
+    --ic-infobox-title-color: #4B6864;
 }
 
 .theme-dark {
@@ -496,6 +529,7 @@ settings:
     --ic-section-background-color: #405956;
     --ic-section-border-color: #6B948F;
     --ic-horizontal-rule-color: #6B948F;
+    --ic-infobox-title-color: #FFFFFF;
 }
 
 .callout[data-callout="infobox"],
@@ -540,6 +574,8 @@ settings:
     text-align: var(--ic-title-alignment);
     font-size: var(--ic-title-size);
     width: 100%;
+    margin: var(--ic-title-margin) 0;
+    color: var(--ic-infobox-title-color);
 }
 
 
