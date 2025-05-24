@@ -1,4 +1,6 @@
-![]([Infobox Callouts Example Vault/Files/Screenshot.png](https://github.com/Avyrra/Infobox-Callouts/blob/main/Infobox%20Callouts%20Example%20Vault/Files/Screenshot.png?raw=true))
+![Screenshot](Infobox%20Callouts%20Example%20Vault/Files/Screenshot.png)
+
+
 
 # Install Guide
 1. Download infobox-callouts.css
