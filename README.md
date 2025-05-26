@@ -34,8 +34,11 @@ Each class must be initiated with HTML. There are three types:
 **Section**, **Label**, and **Info**.
 
 QUICK REFERENCE
+
 `<span class="section">` or `<span class="s">`
+
 `<span class="label">` or `<span class="l">`
+
 `<span class="info">` or `<span class="i">`
 
 You can modify the look of each via **Style Settings** in Obsidian.
