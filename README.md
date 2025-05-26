@@ -63,8 +63,9 @@ Add info with `<span class="info">` or `<span class="i">` and type all informati
 
 # Tips
 1. It is recommended to use Source View in Obsidian when typing an info box. When typing in Live Preview, the automatic rendering may interfere with input.
-2. You can download my example vault in order to see exactly how I used it in my example. (Note, you will need the fonts Alegreya and Alegreya SC if you want it to look the same.)
-3. Or you can use the image below. It is the source view of my example from above.
+2. On desktop, use shift+enter when typing in the callout to automatically add `>`
+3. You can download my example vault in order to see exactly how I used it in my example. (Note, you will need the fonts Alegreya and Alegreya SC if you want it to look the same.)
+4. Or you can use the image below. It is the source view of my example from above.
 
 ![](Other/MarkdownExample.png)
 
