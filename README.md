@@ -67,3 +67,16 @@ Add info with `<span class="info">` or `<span class="i">` and type all informati
 3. Or you can use the image below. It is the source view of my example from above.
 
 ![](Other/MarkdownExample.png)
+
+
+
+# FAQ
+
+**Will it work in Live Preview?**
+Not pefectly. Obsidian uses a different rendering method for Live Preview and Reading Mode. Currently, Live Preview will render the infobox correctly, but will not wrap the text. I am looking into whether or not it's possible to change this vis a snippet, but I'm not sure yet.
+
+**Can I use this in my-**
+Yes. Read the MIT License for more information.
+
+**Why use html classes? They're a pain in the ass.**
+I agree. I tried doing it via full markdown before, but that was an even bigger pain in the ass. Ultimately, I decided that using classes was the least amount of hassle for both myself and the user.
