@@ -62,7 +62,7 @@ The info class will anchor text to a margin positioned after a label. This margi
 Add info with `<span class="info">` or `<span class="i">` and type all information afterwards. Text will automatically wrap within this class onto the next line. Afterwards, type `</span>` to close it.
 
 # Tips
-1. It is recommended to use Source View in Obsidian when typing an info box. When typing in Live Preview, the automatic rendering may interfere with input.
+1. It is recommended to use Source View in Obsidian when typing an info box. When typing in Live Preview, the automatic rendering may interfere with input. You can open the same document using split view to see it update in real time.
 2. On desktop, use shift+enter when typing in the callout to automatically add `>`
 3. You can download my example vault in order to see exactly how I used it in my example. (Note, you will need the fonts Alegreya and Alegreya SC if you want it to look the same.)
 4. Or you can use the image below. It is the source view of my example from above.
