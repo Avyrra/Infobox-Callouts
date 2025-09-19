@@ -537,7 +537,7 @@ settings:
     float: right;
     width: var(--ic-width);
     margin-left: var(--ic-outside-padding);
-    background-color: var(--ic-infobox-color);
+    background: var(--ic-infobox-color);
 
     padding: var(--ic-inside-padding);
     border-radius: var(--ic-round-corners);
@@ -557,7 +557,6 @@ settings:
     border-color: var(--ic-border-color);
 }
 
-
 /* Remove Icon */
 .callout[data-callout="infobox"] .callout-icon,
 .callout[data-callout="infoboxright"] .callout-icon,
@@ -566,9 +565,9 @@ settings:
 }
 
 /* Infobox Title */
-.callout[data-callout="infobox"] .callout-title,
-.callout[data-callout="infoboxright"] .callout-title,
-.callout[data-callout="infoboxleft"] .callout-title {
+.callout[data-callout="infobox"] .callout-title-inner,
+.callout[data-callout="infoboxright"] .callout-title-inner,
+.callout[data-callout="infoboxleft"] .callout-title-inner {
     all: unset;
     display: block;
     text-align: var(--ic-title-alignment);
@@ -580,16 +579,16 @@ settings:
 
 
 /*Extended Typography for Infobox Title*/
-.ic-title-typography-toggle .callout[data-callout="infobox"] .callout-title,
-.ic-title-typography-toggle .callout[data-callout="infoboxright"] .callout-title,
-.ic-title-typography-toggle .callout[data-callout="infoboxleft"] .callout-title {
+.ic-title-typography-toggle .callout[data-callout="infobox"] .callout-title-inner,
+.ic-title-typography-toggle .callout[data-callout="infoboxright"] .callout-title-inner,
+.ic-title-typography-toggle .callout[data-callout="infoboxleft"] .callout-title-inner {
     font-family: var(--ic-title-font);
     font-feature-settings: var(--ic-title-stylistic-sets);
 }
 
-.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infobox"] .callout-title,
-.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infoboxright"] .callout-title,
-.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infobox"] .callout-title {
+.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infobox"] .callout-title-inner,
+.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infoboxright"] .callout-title-inner,
+.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infobox"] .callout-title-inner {
     font-variant: small-caps;
 }
 
