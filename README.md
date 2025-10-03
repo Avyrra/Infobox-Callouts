@@ -35,7 +35,7 @@ Each class must be initiated with HTML. There are three types:
 
 QUICK REFERENCE
 
-`<span class="section">` or `<span class="s">`
+`<div class="section">` or `<div class="s">`
 
 `<span class="label">` or `<span class="l">`
 
