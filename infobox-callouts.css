@@ -532,6 +532,10 @@ settings:
     --ic-infobox-title-color: #FFFFFF;
 }
 
+/* ============================================
+   READING MODE STYLES
+   ============================================ */
+
 .callout[data-callout="infobox"],
 .callout[data-callout="infoboxright"] {
     float: right;
@@ -555,6 +559,54 @@ settings:
     border-radius: var(--ic-round-corners);
     border: var(--ic-border) solid;
     border-color: var(--ic-border-color);
+}
+
+/* INFOBOX / INFOBOXRIGHT - Float Right in Live Preview */
+/* Make the embed block inline so it doesn't take full width */
+.markdown-source-view.is-live-preview .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"]),
+.markdown-source-view.is-live-preview .cm-embed-block.cm-callout:has(.callout[data-callout="infoboxright"]) {
+    display: inline;
+    z-index: 30;
+}
+
+/* Also try without .cm-callout class in case structure differs */
+.markdown-source-view.is-live-preview .cm-embed-block:has(.callout[data-callout="infobox"]),
+.markdown-source-view.is-live-preview .cm-embed-block:has(.callout[data-callout="infoboxright"]) {
+    display: inline;
+    z-index: 30;
+}
+
+/* Float the callout itself to the right */
+.markdown-source-view.is-live-preview .cm-embed-block .callout[data-callout="infobox"],
+.markdown-source-view.is-live-preview .cm-embed-block .callout[data-callout="infoboxright"] {
+    float: right;
+    clear: right;
+    z-index: 30;
+    margin-left: var(--ic-outside-padding);
+    margin-bottom: var(--ic-outside-padding);
+}
+
+/* INFOBOXLEFT - Float Left in Live Preview */
+
+.markdown-source-view.is-live-preview .cm-embed-block.cm-callout:has(.callout[data-callout="infoboxleft"]),
+.markdown-source-view.is-live-preview .cm-embed-block:has(.callout[data-callout="infoboxleft"]) {
+    display: inline;
+    z-index: 30;
+}
+
+.markdown-source-view.is-live-preview .cm-embed-block .callout[data-callout="infoboxleft"] {
+    float: left;
+    clear: left;
+    z-index: 30;
+    margin-right: var(--ic-outside-padding);
+    margin-bottom: var(--ic-outside-padding);
+}
+
+/* Hide the edit button that appears on hover for floated callouts */
+.markdown-source-view.is-live-preview .cm-embed-block:has(.callout[data-callout="infobox"]) > .edit-block-button,
+.markdown-source-view.is-live-preview .cm-embed-block:has(.callout[data-callout="infoboxright"]) > .edit-block-button,
+.markdown-source-view.is-live-preview .cm-embed-block:has(.callout[data-callout="infoboxleft"]) > .edit-block-button {
+    display: none;
 }
 
 /* Remove Icon */
@@ -611,17 +663,6 @@ settings:
 }
 
 /* Section Class */
-/*
-Insert a section with the following:
-<div class="section">Enter Section Name Here</div>
-
-You can use "s" instead of "section" optionally.
-
-Using <div> instead of <span> improves spacing in reading mode.
-IMPORTANT: Add a blank line after the div or Markdown won't render properly below it.
-*/
-
-
 .section,
 .s {
     display: block;
@@ -650,13 +691,6 @@ IMPORTANT: Add a blank line after the div or Markdown won't render properly belo
     font-variant: small-caps;
 }
 
-/* Label and Info */
-/*Enter by typing the following, inserting your label within the Span.
-The first line of information can be placed on the same line afterwards:
-
-<span class="label">Insert Label Here</span>Insert Information Here
-
-alternatively you can use "l" instead of "label"*/
 .label,
 .l {
     font-weight: bold;
@@ -666,10 +700,6 @@ alternatively you can use "l" instead of "label"*/
     text-align: var(--ic-label-alignment);
 }
 
-/*
-Enter information without a label using the info class. (i for short)
-<span class="info"> Enter Information Here </span>
-*/
 .info,
 .i {
     display: block;
