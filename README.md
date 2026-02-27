@@ -1,3 +1,7 @@
+This version is old!
+[Check out the plugin version if you don't wanna clutter your notes with HTML!](https://github.com/Avyrra/Obsidian-Infoboxes/tree/main)
+
+
 # Install Guide
 1. Download infobox-callouts.css
 2. Open your vault's snippets folder (vault/.obsidian/snippets) - Can also be found by clicking the folder icon in the appearance options menu
