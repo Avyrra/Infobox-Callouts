@@ -640,7 +640,7 @@ settings:
 
 .ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infobox"] .callout-title-inner,
 .ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infoboxright"] .callout-title-inner,
-.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infobox"] .callout-title-inner {
+.ic-title-typography-toggle.ic-title-smallcaps .callout[data-callout="infoboxleft"] .callout-title-inner {
     font-variant: small-caps;
 }
 
